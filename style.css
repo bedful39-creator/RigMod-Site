@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg: #050506;
+  --card: #0b0b0e;
+  --accent: #ffd6a0;
+  --text: #f0f4ff;
+  --dim: rgba(232, 236, 245, 0.55);
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding-top: 0;
+  margin: 0;
+}
+
+html, body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+
+/* Preloader */
+#rp-loader {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity .35s ease, visibility .35s ease;
+}
+#rp-loader.out { opacity: 0; visibility: hidden; pointer-events: none; }
+.loader-cube {
+  width: 44px; height: 44px; border-radius: 6px;
+  background: url('mcassets/java/block/dispenser_front.png') no-repeat center / cover;
+  image-rendering: pixelated;
+  box-shadow: 0 0 30px rgba(255, 214, 160, 0.6);
+  animation: spinLoader 1.4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes spinLoader {
+  0% { transform: rotate(0deg) scale(0.9); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(0.9); }
+}
+
+/* Feature Tags List */
+.feature-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.feature-tags .tag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(232, 236, 245, 0.85);
+  letter-spacing: 0.02em;
+}
+
+/* Minimal Footer */
+.rp-footer {
+  border-top: 1px solid var(--border);
+  background: #030304; padding: 36px 24px;
+}
+.footer-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 13px; color: var(--dim); flex-wrap: wrap; gap: 12px;
+}
+.footer-brand {
+  display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 700;
+}
+.logo-box {
+  width: 24px; height: 24px; border-radius: 4px;
+  background: url('mcassets/java/block/dispenser_front.png') no-repeat center / cover;
+  image-rendering: pixelated;
+  box-shadow: 0 0 12px rgba(255, 214, 160, 0.35);
+}
