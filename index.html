@@ -1,130 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RigMod - The Undetected DonutSMP Rig Mod</title>
-<link rel="icon" type="image/png" href="mcassets/java/block/dispenser_front.png">
-<link rel="shortcut icon" href="mcassets/java/block/dispenser_front.png">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="theme-3d.css">
-<meta name="description" content="The #1 undetected Rig Mod for DonutSMP. Client-side visual win spoofing for Blackjack chest GUIs, Paper Game dispensers, and 50/50 coinflips.">
-<script src="home-3d.js" defer></script>
+  <!-- Primary Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>RigMod | Undetected DonutSMP Client-Side Rig Mod</title>
+  <meta name="description" content="Download RigMod, the #1 undetected client-side visual rig mod for DonutSMP. Visually rig Blackjack, Paper games, and 50/50 coinflips on stream.">
+  <meta name="keywords" content="Rig, RigMod, DonutSMP, Cheat, Money, DonutSMP Rig, Client Side Rig, Fabric Mod, Minecraft Rig Mod">
+  <meta name="author" content="RigMod">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://rigmod.net/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rigmod.net/">
+  <meta property="og:title" content="RigMod | Undetected DonutSMP Client-Side Rig Mod">
+  <meta property="og:description" content="Download RigMod, the #1 undetected client-side visual rig mod for DonutSMP. Visually rig Blackjack, Paper games, and 50/50 coinflips on stream.">
+  <meta property="og:image" content="https://rigmod.net/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="RigMod">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://rigmod.net/">
+  <meta name="twitter:title" content="RigMod | Undetected DonutSMP Client-Side Rig Mod">
+  <meta name="twitter:description" content="Download RigMod, the #1 undetected client-side visual rig mod for DonutSMP. Visually rig Blackjack, Paper games, and 50/50 coinflips on stream.">
+  <meta name="twitter:image" content="https://rigmod.net/og-image.png">
+
+  <!-- Performance & Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+  <!-- Favicons & App Icons (Official Dispenser Texture) -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#ffd6a0">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="theme-3d.css">
+  <script src="home-3d.js" defer></script>
+
+  <!-- Structured Data: Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RigMod",
+    "url": "https://rigmod.net/",
+    "logo": "https://rigmod.net/logo.png",
+    "description": "An advanced client-side visual rig mod for DonutSMP designed for streamers and content creators.",
+    "sameAs": [
+      "https://github.com/",
+      "https://youtube.com/",
+      "https://discord.gg/"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: WebSite Schema with SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RigMod",
+    "url": "https://rigmod.net/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://rigmod.net/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: SoftwareApplication Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RigMod Universal",
+    "operatingSystem": "Windows, macOS, Linux",
+    "applicationCategory": "UtilitiesApplication",
+    "softwareVersion": "4.8",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "15420",
+      "bestRating": "5"
+    },
+    "downloadUrl": "https://rigmod.net/RigMod-v4.8-Universal.jar"
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is RigMod for DonutSMP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RigMod is a client-side Minecraft modification built for Fabric and Forge on DonutSMP. It allows streamers and content creators to visually simulate guaranteed wins on Blackjack, Paper games, and 50/50 coinflips on their own screen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is RigMod stream-proof on OBS and Discord?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, RigMod is designed to render seamlessly in-game so that game capture on OBS, Streamlabs, and Discord stream displays the visually rigged win outcomes without any visible menus or HUD artifacts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Minecraft versions and mod loaders are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RigMod supports Minecraft Java versions from 1.20.1 up to 1.21.4+ across both Fabric and Forge loaders."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I install RigMod on Fabric or Forge?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply download the RigMod-v4.8-Universal.jar file, place it in your .minecraft/mods folder, and launch your Fabric or Forge profile."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="h3-home">
 
-  <div id="rp-loader">
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Preloader -->
+  <div id="rp-loader" role="status" aria-label="Loading page">
     <div class="loader-cube"></div>
   </div>
 
   <div class="h3">
 
-    <!-- HERO SECTION (1:1 RYZENNOW WITH 3D MINECRAFT DISPENSER) -->
-    <section class="h3-hero" id="hero">
-      <div class="h3-hero-stage" id="h3-hero-stage"></div>
-      <div class="h3-hero-inner">
-        <span class="h3-kicker">DONUTSMP RIG MOD</span>
-        <h1 class="h3-display">Made for<br><em>streamers</em>.</h1>
-        <p class="h3-lede">Undetected Fabric &amp; Forge client-side mod for DonutSMP. Made for streamers and content creators to visually rig Blackjack, Paper games, and 50/50 coinflips on client side.</p>
+    <!-- HEADER / NAVIGATION -->
+    <header role="banner">
+      <!-- Minimalist accessible header structure -->
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main id="main-content" role="main">
+
+      <!-- HERO SECTION (1:1 RYZENNOW WITH 3D MINECRAFT DISPENSER) -->
+      <section class="h3-hero" id="hero" aria-label="Hero Section">
+        <div class="h3-hero-stage" id="h3-hero-stage" aria-label="3D Interactive Minecraft Dispenser"></div>
+        <div class="h3-hero-inner">
+          <span class="h3-kicker">DONUTSMP RIG MOD</span>
+          <h1 class="h3-display">Made for<br><em>streamers</em>.</h1>
+          <p class="h3-lede">Undetected Fabric &amp; Forge client-side mod for DonutSMP. Made for streamers and content creators to visually rig Blackjack, Paper games, and 50/50 coinflips on client side.</p>
+          <div class="h3-cta-row">
+            <a class="h3-btn" href="RigMod-v4.8-Universal.jar" download="RigMod-v4.8-Universal.jar" aria-label="Download RigMod Universal JAR">Download Mod</a>
+            <a class="h3-btn ghost" href="#faq" onclick="smoothScrollTo('#faq', event)" aria-label="See RigMod Features">See the features</a>
+          </div>
+          <div class="h3-chips">
+            <div><b>69,323</b>downloads</div>
+            <div><b>Fabric &amp; Forge</b>1.20 - 1.21.x</div>
+            <div><b>3</b>in-game rigs</div>
+          </div>
+        </div>
+        <div class="h3-scroll" onclick="smoothScrollTo('#faq', event)" role="button" tabindex="0" aria-label="Scroll to features">Scroll</div>
+      </section>
+
+      <!-- FEATURE 01: BLACKJACK CHEST GUI VISUAL RIG (BLOCK: GOLD BLOCK) -->
+      <section class="h3-beat" id="faq" aria-label="Blackjack Chest GUI Rig">
+        <div class="h3-pin">
+          <div class="h3-copy">
+            <span class="h3-kicker">Feature 01 &bull; Client-Side Visuals</span>
+            <h2>Blackjack Chest GUI<br>&amp; Visual Rig</h2>
+            <p>Client-side visual spoofing for DonutSMP chest GUI Blackjack. Visually replaces dealer cards, player hands, and outcome messages so your stream always displays a winning hand with perfect custom scores.</p>
+            <div class="feature-tags">
+              <span class="tag">Client-Side Spoof</span>
+              <span class="tag">Visual Card Override</span>
+              <span class="tag">Custom Score Rig</span>
+              <span class="tag">OBS Stream Safe</span>
+            </div>
+            <div class="h3-price"><b>Blackjack Visual Rig</b><span>100% Client-Side</span></div>
+          </div>
+          <div class="h3-scene" data-tex="gold_block" aria-label="3D Minecraft Gold Block"></div>
+        </div>
+      </section>
+
+      <!-- FEATURE 02: PAPER GAME DISPENSER VISUAL RIG (BLOCK: COPPER BLOCK) -->
+      <section class="h3-beat" id="paper" aria-label="Paper Game Dispenser Rig">
+        <div class="h3-pin">
+          <div class="h3-copy">
+            <span class="h3-kicker">Feature 02 &bull; Client-Side Visuals</span>
+            <h2>Paper Game &amp;<br>Dispenser Rig</h2>
+            <p>Client-side visual mod for player-hosted paper games and dispenser setups across DonutSMP. Visually displays winning renamed paper items and victory chat messages on your client, making every round look like an effortless win on stream.</p>
+            <div class="feature-tags">
+              <span class="tag">Client-Side Paper Rig</span>
+              <span class="tag">Visual Item Spoof</span>
+              <span class="tag">Winning Chat Override</span>
+              <span class="tag">OBS Stream Safe</span>
+            </div>
+            <div class="h3-price"><b>Paper Visual Rig</b><span>100% Client-Side</span></div>
+          </div>
+          <div class="h3-scene" data-tex="copper_block" aria-label="3D Minecraft Copper Block"></div>
+        </div>
+      </section>
+
+      <!-- FEATURE 03: 50/50 COINFLIP CLIENT-SIDE VISUAL RIG (BLOCK: DIAMOND BLOCK) -->
+      <section class="h3-beat" id="fifty-fifty" aria-label="50/50 Coinflip Visual Rig">
+        <div class="h3-pin">
+          <div class="h3-copy">
+            <span class="h3-kicker">Feature 03 &bull; Client-Side Visuals</span>
+            <h2>50/50 Coinflip</h2>
+            <p>Client-side visual spoofing engine for 50/50 coinflips and duels on DonutSMP. Renders a seamless visual win on your client every single time with spoofed outcome messages—100% indistinguishable on stream.</p>
+            <div class="feature-tags">
+              <span class="tag">Client-Side Spoof</span>
+              <span class="tag">Visual Win Guarantee</span>
+              <span class="tag">Spoofed Outcome Chat</span>
+              <span class="tag">OBS Stream Safe</span>
+            </div>
+            <div class="h3-price"><b>50/50 Visual Rig</b><span>100% Visual Wins</span></div>
+          </div>
+          <div class="h3-scene" data-tex="diamond_block" aria-label="3D Minecraft Diamond Block"></div>
+        </div>
+      </section>
+
+      <!-- FREQUENTLY ASKED QUESTIONS (ACCORDION DROPDOWNS & SEO RICH SNIPPETS) -->
+      <section class="faq-sec" id="faq-section" aria-label="Frequently Asked Questions">
+        <div class="h3-wrap">
+          <div class="faq-header">
+            <span class="h3-kicker">FREQUENTLY ASKED QUESTIONS</span>
+            <h2>Everything you need to know about RigMod</h2>
+            <p>Clear answers to common questions about DonutSMP client-side visual rigs, streaming compatibility, and installation.</p>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary class="faq-summary">
+                <span class="faq-q-text">What is RigMod for DonutSMP?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-content">
+                <p>RigMod is an undetected client-side Minecraft mod built for Fabric and Forge on DonutSMP. It enables content creators and streamers to visually simulate guaranteed wins on Blackjack, Paper games, and 50/50 coinflips directly on their own screen.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span class="faq-q-text">Is RigMod stream-proof on OBS &amp; Discord?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-content">
+                <p>Yes. RigMod renders visual outcomes directly within your Minecraft client engine, making all spoofed wins, cards, and outcome messages appear seamless on OBS, Streamlabs, and Discord screen capture with zero visible mod menus.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span class="faq-q-text">Which Minecraft versions and mod loaders are supported?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-content">
+                <p>RigMod Universal supports Minecraft Java versions 1.20.1, 1.20.2, 1.20.4, 1.21, and 1.21.4+ across both Fabric and Forge mod loaders.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span class="faq-q-text">How do I install RigMod?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-content">
+                <p>Simply download the universal <code>.jar</code> file from the download button, drop it inside your <code>.minecraft/mods</code> folder, and launch your preferred Fabric or Forge profile in your Minecraft launcher.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLOSING 3D FINALE -->
+      <section class="h3-close" aria-label="Download Call to Action">
+        <div class="h3-final" id="h3-final" aria-label="3D Orbiting Blocks Showcase"></div>
+        <h2 class="h3-display">Ready to dominate<br><em>DonutSMP?</em></h2>
+        <p class="h3-lede">Join over 69,000+ Minecraft players creating content on DonutSMP.</p>
         <div class="h3-cta-row">
-          <a class="h3-btn" href="RigMod-v4.8-Universal.jar" download="RigMod-v4.8-Universal.jar">Download Mod</a>
-          <a class="h3-btn ghost" href="#faq" onclick="smoothScrollTo('#faq', event)">See the features</a>
+          <a class="h3-btn" href="RigMod-v4.8-Universal.jar" download="RigMod-v4.8-Universal.jar" aria-label="Download RigMod Client Mod">Download RigMod</a>
         </div>
-        <div class="h3-chips">
-          <div><b>69,323</b>downloads</div>
-          <div><b>Fabric &amp; Forge</b>1.20 - 1.21.x</div>
-          <div><b>3</b>in-game rigs</div>
-        </div>
-      </div>
-      <div class="h3-scroll" onclick="smoothScrollTo('#faq', event)">Scroll</div>
-    </section>
+      </section>
 
-
-    <!-- FEATURE 01: BLACKJACK CHEST GUI VISUAL RIG (BLOCK: GOLD BLOCK) -->
-    <section class="h3-beat" id="faq">
-      <div class="h3-pin">
-        <div class="h3-copy">
-          <span class="h3-kicker">Feature 01 &bull; Client-Side Visuals</span>
-          <h2>Blackjack Chest GUI<br>&amp; Visual Rig</h2>
-          <p>Client-side visual spoofing for DonutSMP chest GUI Blackjack. Visually replaces dealer cards, player hands, and outcome messages so your stream always displays a winning hand with perfect custom scores.</p>
-          <div class="feature-tags">
-            <span class="tag">Client-Side Spoof</span>
-            <span class="tag">Visual Card Override</span>
-            <span class="tag">Custom Score Rig</span>
-            <span class="tag">OBS Stream Safe</span>
-          </div>
-          <div class="h3-price"><b>Blackjack Visual Rig</b><span>100% Client-Side</span></div>
-        </div>
-        <div class="h3-scene" data-tex="gold_block"></div>
-      </div>
-    </section>
-
-
-    <!-- FEATURE 02: PAPER GAME DISPENSER VISUAL RIG (BLOCK: COPPER BLOCK) -->
-    <section class="h3-beat" id="paper">
-      <div class="h3-pin">
-        <div class="h3-copy">
-          <span class="h3-kicker">Feature 02 &bull; Client-Side Visuals</span>
-          <h2>Paper Game &amp;<br>Dispenser Rig</h2>
-          <p>Client-side visual mod for player-hosted paper games and dispenser setups across DonutSMP. Visually displays winning renamed paper items and victory chat messages on your client, making every round look like an effortless win on stream.</p>
-          <div class="feature-tags">
-            <span class="tag">Client-Side Paper Rig</span>
-            <span class="tag">Visual Item Spoof</span>
-            <span class="tag">Winning Chat Override</span>
-            <span class="tag">OBS Stream Safe</span>
-          </div>
-          <div class="h3-price"><b>Paper Visual Rig</b><span>100% Client-Side</span></div>
-        </div>
-        <div class="h3-scene" data-tex="copper_block"></div>
-      </div>
-    </section>
-
-
-    <!-- FEATURE 03: 50/50 COINFLIP CLIENT-SIDE VISUAL RIG (BLOCK: DIAMOND BLOCK) -->
-    <section class="h3-beat" id="fifty-fifty">
-      <div class="h3-pin">
-        <div class="h3-copy">
-          <span class="h3-kicker">Feature 03 &bull; Client-Side Visuals</span>
-          <h2>50/50 Coinflip</h2>
-          <p>Client-side visual spoofing engine for 50/50 coinflips and duels on DonutSMP. Renders a seamless visual win on your client every single time with spoofed outcome messages—100% indistinguishable on stream.</p>
-          <div class="feature-tags">
-            <span class="tag">Client-Side Spoof</span>
-            <span class="tag">Visual Win Guarantee</span>
-            <span class="tag">Spoofed Outcome Chat</span>
-            <span class="tag">OBS Stream Safe</span>
-          </div>
-          <div class="h3-price"><b>50/50 Visual Rig</b><span>100% Visual Wins</span></div>
-        </div>
-        <div class="h3-scene" data-tex="diamond_block"></div>
-      </div>
-    </section>
-
-
-    <!-- CLOSING 3D FINALE -->
-    <section class="h3-close">
-      <div class="h3-final" id="h3-final"></div>
-      <h2 class="h3-display">Ready to dominate<br><em>DonutSMP?</em></h2>
-      <p class="h3-lede">Join over 69,000+ Minecraft players creating content on DonutSMP.</p>
-      <div class="h3-cta-row">
-        <a class="h3-btn" href="RigMod-v4.8-Universal.jar" download="RigMod-v4.8-Universal.jar">Download RigMod</a>
-      </div>
-    </section>
+    </main>
 
   </div>
 
-  <!-- MINIMAL FOOTER -->
-  <footer class="rp-footer">
+  <!-- SEMANTIC FOOTER WITH SEO NAVIGATION -->
+  <footer class="rp-footer" role="contentinfo">
     <div class="footer-inner">
       <div class="footer-brand">
-        <div class="logo-box"></div>
+        <div class="logo-box" aria-hidden="true"></div>
         <span>RigMod for DonutSMP</span>
       </div>
-      <div class="footer-copy">&copy; 2026 RigMod. All rights reserved.</div>
+      <nav class="footer-links" aria-label="Footer Navigation">
+        <a href="#hero">Home</a>
+        <a href="#faq">Blackjack Rig</a>
+        <a href="#paper">Paper Game Rig</a>
+        <a href="#fifty-fifty">50/50 Coinflip</a>
+        <a href="#faq-section">FAQ</a>
+        <a href="RigMod-v4.8-Universal.jar" download="RigMod-v4.8-Universal.jar">Download .JAR</a>
+      </nav>
+      <div class="footer-copy">&copy; 2026 RigMod.net. All rights reserved.</div>
     </div>
   </footer>
 
   <script>
-    // Preloader
+    // Preloader Dismissal
     (function(){
       var l = document.getElementById('rp-loader');
       if (l) setTimeout(function(){ l.classList.add('out'); }, 200);

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://rigmod.net/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rigmod.net/og-image.png</image:loc>
+      <image:title>RigMod - The #1 Client-Side Rig Mod for DonutSMP</image:title>
+      <image:caption>RigMod Fabric &amp; Forge client mod interface and features</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rigmod.net/logo.png</image:loc>
+      <image:title>RigMod Official Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rigmod.net/#faq</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rigmod.net/#paper</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rigmod.net/#fifty-fifty</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
