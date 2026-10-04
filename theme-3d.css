@@ -153,6 +153,13 @@
   letter-spacing: -.02em; margin-bottom: 2px;
 }
 
+/* DonutSMP target-server chip in the hero stats row */
+.chip-donutsmp img {
+  display: block; width: 32px; height: 32px; object-fit: contain;
+  margin: 0 auto 4px;
+  filter: drop-shadow(0 0 10px rgba(64, 156, 255, .55));
+}
+
 .h3-scroll {
   position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%);
   font-size: 11px; font-weight: 700; letter-spacing: .2em;
