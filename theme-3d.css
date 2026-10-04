@@ -34,6 +34,16 @@
   text-transform: uppercase; color: var(--hot); margin-bottom: 18px;
 }
 
+/* Subtle DonutSMP brand mark in the hero kicker */
+.h3-kicker.brand-kicker {
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.kicker-donut {
+  width: 18px; height: 18px; object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(255, 214, 160, .35));
+  image-rendering: auto;
+}
+
 .h3-display {
   font-size: clamp(42px, 6.8vw, 96px);
   line-height: .95; letter-spacing: -.045em; font-weight: 900; margin: 0 0 22px;

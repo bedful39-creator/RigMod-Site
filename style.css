@@ -215,6 +215,10 @@ html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
   image-rendering: pixelated;
   box-shadow: 0 0 12px rgba(255, 214, 160, 0.35);
 }
+.footer-donut {
+  width: 16px; height: 16px; object-fit: contain;
+  opacity: 0.75; border-radius: 3px;
+}
 .footer-links {
   display: flex; gap: 20px; flex-wrap: wrap;
 }
