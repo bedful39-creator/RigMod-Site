@@ -223,13 +223,24 @@
     requestAnimationFrame(frame);
   }
 
-  // Smooth Scroll Helper
+  // Smooth Scroll Helper (respects prefers-reduced-motion)
   window.smoothScrollTo = function (targetSelector, e) {
     if (e && e.preventDefault) e.preventDefault();
     var target = document.querySelector(targetSelector);
     if (!target) return;
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
   };
+
+  // Keyboard activation for role="button" elements (Enter / Space)
+  document.addEventListener('keydown', function (ev) {
+    var el = ev.target;
+    if (!el || el.getAttribute('role') !== 'button') return;
+    if (ev.key === 'Enter' || ev.key === ' ' || ev.key === 'Spacebar') {
+      ev.preventDefault();
+      el.click();
+    }
+  });
 
   function start() {
     buildHero();
