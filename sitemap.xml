@@ -1,43 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://rigmod.net/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://rigmod.net/og-image.png</image:loc>
-      <image:title>RigMod - The #1 Client-Side Rig Mod for DonutSMP</image:title>
-      <image:caption>RigMod Fabric &amp; Forge client mod interface and features</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://rigmod.net/logo.png</image:loc>
-      <image:title>RigMod Official Logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://rigmod.net/about.html</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://rigmod.net/contact.html</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://rigmod.net/privacy-policy.html</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://rigmod.net/terms-of-service.html</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Core Pages - Max Authority -->
+<url>
+<loc>https://rigmod.net/</loc>
+<changefreq>daily</changefreq>
+<priority>1.0</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<url>
+<loc>https://rigmod.net/download.html</loc>
+<changefreq>daily</changefreq>
+<priority>1.0</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<!-- Keyword-Targeted Content Pages -->
+<url>
+<loc>https://rigmod.net/features.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<url>
+<loc>https://rigmod.net/slot-machine-mod.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<!-- Long-Tail Keyword & Question-Intent Pages -->
+<url>
+<loc>https://rigmod.net/install.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<url>
+<loc>https://rigmod.net/versions.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<url>
+<loc>https://rigmod.net/faq.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<url>
+<loc>https://rigmod.net/donutsmp-slots-guide.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<!-- Version/Update Pages -->
+<url>
+<loc>https://rigmod.net/changelog.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<!-- Trust Pages -->
+<url>
+<loc>https://rigmod.net/about.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<url>
+<loc>https://rigmod.net/contact.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<url>
+<loc>https://rigmod.net/privacy-policy.html</loc>
+<changefreq>yearly</changefreq>
+<priority>0.4</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
+<url>
+<loc>https://rigmod.net/terms-of-service.html</loc>
+<changefreq>yearly</changefreq>
+<priority>0.4</priority>
+<lastmod>2026-10-09</lastmod>
+</url>
 </urlset>
